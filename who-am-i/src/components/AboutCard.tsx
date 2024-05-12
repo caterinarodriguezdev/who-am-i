@@ -13,7 +13,7 @@ export const AboutCard: React.FC<AboutCardProps> = ({title, description, icon}) 
         <Flex justify='center' vertical>
           <Card className='card-title'>
               <Flex justify='flex-start' align='center'>
-                <img style={{width: '24px', height: '24px', marginRight: '1rem'}} src={`./src/assets/${icon}`} alt={`icon ${icon}`}/>
+                <img style={{width: '24px', height: '24px', marginRight: '1rem'}} src={icon} alt={`icono para ${title}`}/>
                 <p>{title}</p>
               </Flex>
           </Card>

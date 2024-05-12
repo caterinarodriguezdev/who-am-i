@@ -22,7 +22,7 @@ function App() {
         <Header style={{backgroundColor: 'white', height: '75vh', textAlign: 'center'}}>
               <Flex align='center' vertical>
                   <div style={{width: '300px', height: '300px', overflow: 'hidden', borderRadius: '50%', marginTop: '3rem'}}>
-                      <img src="./src/assets/profile.png" style={{width: '115%', height: 'auto'}} alt='profile picture'></img>
+                      <img src='https://github.com/caterinarodriguezdev/who-am-i/blob/main/who-am-i/src/assets/profile.png' style={{width: '115%', height: 'auto'}} alt='profile picture'></img>
                   </div>
                   <h1>¡Hola! Soy Caterina</h1>
                   <p>
@@ -40,19 +40,19 @@ function App() {
                       </a>
                     </Flex>
               </Flex>
-              <img src='./src/assets/triangle.png' className='triangle1' alt='triangle'/>
-              <img src='./src/assets/triangle.png' className='triangle2'alt='triangle'/>
+              <img src='https://raw.githubusercontent.com/caterinarodriguezdev/who-am-i/main/who-am-i/src/assets/triangle.png' className='triangle1' alt='triangle'/>
+              <img src='https://raw.githubusercontent.com/caterinarodriguezdev/who-am-i/main/who-am-i/src/assets/triangle.png' className='triangle2'alt='triangle'/>
         </Header>
         <Content style={{height: '80vh', width: '100%', backgroundColor: 'white'}}>
             <Flex align='center' vertical>
               <h2>Sobre mí</h2>
               <Flex justify='space-evenly'>
-                <Fact icon='basket.png' text='Juego a basquet'/>
-                <Fact icon='padthai.png' text='Me encanta el padthai'/>
-                <Fact icon='loki.svg' text='Mi perro se llama Loki'/>            
+                <Fact icon='https://raw.githubusercontent.com/caterinarodriguezdev/who-am-i/main/who-am-i/src/assets/basket.png' text='Juego a basquet'/>
+                <Fact icon='https://raw.githubusercontent.com/caterinarodriguezdev/who-am-i/main/who-am-i/src/assets/padthai.png' text='Me encanta el padthai'/>
+                <Fact icon='https://raw.githubusercontent.com/caterinarodriguezdev/who-am-i/b6328767c54a0e45ab340cb0a9f70867b0b89f2b/who-am-i/src/assets/loki.svg' text='Mi perro se llama Loki'/>            
               </Flex>
-              <AboutCard title='MI EXPERIENCIA' icon='bag.png' description={experienceDescription}/>
-              <AboutCard title='MI STACK' icon='stack.png' description={stackDescription}/>
+              <AboutCard title='MI EXPERIENCIA' icon='https://raw.githubusercontent.com/caterinarodriguezdev/who-am-i/main/who-am-i/src/assets/bag.png' description={experienceDescription}/>
+              <AboutCard title='MI STACK' icon='https://raw.githubusercontent.com/caterinarodriguezdev/who-am-i/main/who-am-i/src/assets/stack.png' description={stackDescription}/>
             </Flex>
         </Content>
         <Footer style={{backgroundColor: 'black', color: 'white', textAlign: 'left', padding: '1rem 0'}}>
