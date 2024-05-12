@@ -22,7 +22,7 @@ function App() {
         <Header style={{backgroundColor: 'white', height: '75vh', textAlign: 'center'}}>
               <Flex align='center' vertical>
                   <div style={{width: '300px', height: '300px', overflow: 'hidden', borderRadius: '50%', marginTop: '3rem'}}>
-                      <img src='https://github.com/caterinarodriguezdev/who-am-i/blob/main/who-am-i/src/assets/profile.png' style={{width: '115%', height: 'auto'}} alt='profile picture'></img>
+                      <img src='https://raw.githubusercontent.com/caterinarodriguezdev/who-am-i/main/who-am-i/src/assets/profile.png' style={{width: '115%', height: 'auto'}} alt='profile picture'></img>
                   </div>
                   <h1>¡Hola! Soy Caterina</h1>
                   <p>
