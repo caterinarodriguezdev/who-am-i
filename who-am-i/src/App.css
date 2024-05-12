@@ -1,0 +1,39 @@
+* {
+    font-family: 'Robot Mono', monospace;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 18px;
+    line-height: 10px;
+}
+
+a {
+    margin-top: 1rem;
+    color: black;
+    text-decoration: none;
+}
+
+.links:hover {
+    color: #8456DF;
+}
+
+.triangle1 {
+    width: 150px;
+    position: absolute;
+    top: 15%;
+    left: 70%;
+    transform: rotate(30deg);
+}
+
+.triangle2 {
+    width: 150px;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    transform: rotate(75deg);
+}

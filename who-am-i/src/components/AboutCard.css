@@ -1,0 +1,8 @@
+.card-title {
+    margin-top: 3rem;
+    width: 600px;
+    border: 1px solid black;
+    & > div {
+        padding: 0 1rem !important;
+    }
+}
