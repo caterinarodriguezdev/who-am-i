@@ -17,7 +17,7 @@ export const AboutCard: React.FC<AboutCardProps> = ({title, description, icon}) 
                 <p>{title}</p>
               </Flex>
           </Card>
-          <text style={{textAlign: 'left', margin: '1rem', width: '600px', fontSize: '1rem', borderLeft: '1px solid black', paddingLeft: '1rem'}}>
+          <text className='text'>
             {description}
           </text>
         </Flex>
