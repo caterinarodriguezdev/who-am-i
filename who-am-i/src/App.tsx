@@ -4,7 +4,7 @@ import {
   InstagramFilled,
   LinkedinFilled
 } from '@ant-design/icons';
-import { Flex, Layout } from 'antd';
+import { Row, Col, Layout } from 'antd';
 import './App.css';
 import { AboutCard } from './components/AboutCard.tsx';
 import { Fact } from './components/Fact.tsx';
@@ -17,51 +17,84 @@ function App() {
   const stackDescription: string = 'En mi stack principal tengo Typescript, React, AntDesign, Java y Spring aún así me gusta investigar y he desarrollado proyectos personales con Vue, Angular y Python.';
 
   return (
-    <>
-      <Layout>
-        <Header style={{backgroundColor: 'white', height: '75vh', textAlign: 'center'}}>
-              <Flex align='center' vertical>
-                  <div style={{width: '300px', height: '300px', overflow: 'hidden', borderRadius: '50%', marginTop: '3rem'}}>
-                      <img src='https://raw.githubusercontent.com/caterinarodriguezdev/who-am-i/main/who-am-i/src/assets/profile.png' style={{width: '115%', height: 'auto'}} alt='profile picture'></img>
-                  </div>
-                  <h1>¡Hola! Soy Caterina</h1>
-                  <p>
-                      Soy Desarrolladora Web FullStack, actualmente centrada en el frontend
-                  </p>
-                    <Flex gap='24px'>
-                      <a href='https://github.com/caterinarodriguezdev' className='links' target='_blank'>
-                        <GithubFilled style={{fontSize: '1.7rem'}}/>
-                      </a>
-                      <a href='https://www.instagram.com/caterinarodriguezdev/' className='links' target='_blank'>
-                        <InstagramFilled style={{fontSize: '1.7rem'}}/>
-                      </a>
-                      <a href='https://www.linkedin.com/in/caterinabergas/' className='links' target='_blank'>
-                        <LinkedinFilled style={{fontSize: '1.7rem'}}/>
-                      </a>
-                    </Flex>
-              </Flex>
-              <img src='https://raw.githubusercontent.com/caterinarodriguezdev/who-am-i/main/who-am-i/src/assets/triangle.png' className='triangle1' alt='triangle'/>
-              <img src='https://raw.githubusercontent.com/caterinarodriguezdev/who-am-i/main/who-am-i/src/assets/triangle.png' className='triangle2'alt='triangle'/>
+    <Layout>
+        <Header style={{ height: '70vh', backgroundColor: 'white', padding: '2rem' }}>
+          <Row>
+            <Col span={24}>
+              <img
+                src="https://raw.githubusercontent.com/caterinarodriguezdev/who-am-i/main/who-am-i/src/assets/profile.png"
+                style={{ width: '300px', height: '300px', borderRadius: '50%' }}
+                alt="profile picture"
+                />
+            </Col>
+          </Row>
+          <Row>
+            <Col span={24}>
+              <h1>¡Hola! Soy Caterina</h1>
+              <p>Soy Desarrolladora Web FullStack, actualmente centrada en el frontend</p>
+              <a href="https://github.com/caterinarodriguezdev" target="_blank">
+                <GithubFilled className='links' />
+              </a>
+              <a href="https://www.instagram.com/caterinarodriguezdev/" target="_blank">
+                <InstagramFilled className='links' />
+              </a>
+              <a href="https://www.linkedin.com/in/caterinabergas/" target="_blank">
+                <LinkedinFilled className='links' />
+              </a>
+            </Col>
+          </Row>
+          <img
+            src="https://raw.githubusercontent.com/caterinarodriguezdev/who-am-i/main/who-am-i/src/assets/triangle.png"
+            className="triangle1"
+            alt="triangle"
+          />
+          <img
+            src="https://raw.githubusercontent.com/caterinarodriguezdev/who-am-i/main/who-am-i/src/assets/triangle.png"
+            className="triangle2"
+            alt="triangle"
+          />
         </Header>
-        <Content style={{height: '80vh', width: '100%', backgroundColor: 'white'}}>
-            <Flex align='center' vertical>
+        <Content style={{ padding: '2rem', backgroundColor: 'white' }}>
+          <Row justify="center" align="middle">
+            <Col span={24}>
               <h2>Sobre mí</h2>
-              <Flex justify='space-evenly'>
-                <Fact icon='https://raw.githubusercontent.com/caterinarodriguezdev/who-am-i/main/who-am-i/src/assets/basket.png' text='Juego a basquet'/>
-                <Fact icon='https://raw.githubusercontent.com/caterinarodriguezdev/who-am-i/main/who-am-i/src/assets/padthai.png' text='Me encanta el padthai'/>
-                <Fact icon='https://raw.githubusercontent.com/caterinarodriguezdev/who-am-i/b6328767c54a0e45ab340cb0a9f70867b0b89f2b/who-am-i/src/assets/loki.svg' text='Mi perro se llama Loki'/>            
-              </Flex>
-              <AboutCard title='MI EXPERIENCIA' icon='https://raw.githubusercontent.com/caterinarodriguezdev/who-am-i/main/who-am-i/src/assets/bag.png' description={experienceDescription}/>
-              <AboutCard title='MI STACK' icon='https://raw.githubusercontent.com/caterinarodriguezdev/who-am-i/main/who-am-i/src/assets/stack.png' description={stackDescription}/>
-            </Flex>
+            </Col>          </Row>
+          <Row justify='center' gutter={16} style={{flexWrap: 'wrap'}}>
+            <Col md={24} lg={8} className='fact-container'>
+              <Fact icon="https://raw.githubusercontent.com/caterinarodriguezdev/who-am-i/main/who-am-i/src/assets/basket.png" text="Juego a basquet" />
+            </Col>       
+            <Col md={24} lg={8} className='fact-container'>
+              <Fact icon="https://raw.githubusercontent.com/caterinarodriguezdev/who-am-i/main/who-am-i/src/assets/padthai.png" text="Me encanta el padthai" />
+            </Col>     
+            <Col md={24} lg={8} className='fact-container'>
+              <Fact icon="https://raw.githubusercontent.com/caterinarodriguezdev/who-am-i/b6328767c54a0e45ab340cb0a9f70867b0b89f2b/who-am-i/src/assets/loki.svg" text="Mi perro se llama Loki" />
+            </Col>
+          </Row>
+          <Row justify='center'>
+            <Col>
+              <AboutCard
+                title="MI EXPERIENCIA"
+                icon="https://raw.githubusercontent.com/caterinarodriguezdev/who-am-i/main/who-am-i/src/assets/bag.png"
+                description={experienceDescription}
+              />
+              <AboutCard
+                title="MI STACK"
+                icon="https://raw.githubusercontent.com/caterinarodriguezdev/who-am-i/main/who-am-i/src/assets/stack.png"
+                description={stackDescription}
+              />
+            </Col>
+          </Row>
         </Content>
-        <Footer style={{backgroundColor: 'black', color: 'white', textAlign: 'left', padding: '1rem 0'}}>
-          <h2>Caterina Rodríguez</h2>
-          <p>Desarrolladora de Software</p>
+        <Footer style={{ backgroundColor: 'black', color: 'white', padding: '1rem' }}>
+          <Row justify="center" align="middle">
+            <Col span={12}>
+              <h2>Caterina Rodríguez</h2>
+              <p>Desarrolladora de Software</p>
+            </Col>
+          </Row>
         </Footer>
-      </Layout>
-    </>
-  ) 
+    </Layout>
+  );
 }
 
 export default App

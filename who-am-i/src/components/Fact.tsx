@@ -1,6 +1,5 @@
 import { Card, Flex } from 'antd'
 import React from 'react';
-import './Fact.css'
 
 interface FactProps {
     icon: string;
@@ -10,7 +9,7 @@ interface FactProps {
 export const Fact: React.FC<FactProps> = ({icon, text}) => {
 
     return (
-        <Card className='card'>
+        <Card style={{border: '1px solid'}}>
             <Flex justify='space-evenly' align='center'>
                 <img style={{width: '24px', height: '24px'}} src={icon} alt={`icono de ${text}`}/>
                 <p>{text}</p>
