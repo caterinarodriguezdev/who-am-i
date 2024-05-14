@@ -18,7 +18,7 @@ function App() {
 
   return (
     <Layout>
-        <Header style={{ height: '60vh', backgroundColor: 'white', padding: '2rem' }}>
+        <Header style={{ height: '70vh', backgroundColor: 'white', padding: '2rem' }}>
           <Row>
             <Col span={24}>
               <img
