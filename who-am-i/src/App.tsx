@@ -23,7 +23,7 @@ function App() {
             <Col span={24}>
               <img
                 src='https://raw.githubusercontent.com/caterinarodriguezdev/who-am-i/main/who-am-i/src/assets/profile.png'
-                style={{ width: '300px', height: '300px', borderRadius: '50%' }}
+                style={{borderRadius: '50%', width: '300px', height: 'auto'}}
                 alt='profile picture'
                 />
             </Col>
