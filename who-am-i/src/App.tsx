@@ -13,7 +13,7 @@ function App() {
   
   const { Header, Footer, Content } = Layout;
 
-  const experienceDescription: string = 'Soy desarrolladora de software y tengo 3 años de experiencia en el desarrollo de aplicaciones web.Me apasiona crear interfaces de usuario intuitivas, escalables y eficientes. Siempre estoy buscando nuevas formas de mejorar la calidad del código y la experiencia del usuario.'
+  const experienceDescription: string = 'Soy desarrolladora de software y tengo 3 años de experiencia en el desarrollo de aplicaciones web. Me apasiona crear interfaces de usuario intuitivas, escalables y eficientes. Siempre estoy buscando nuevas formas de mejorar la calidad del código y la experiencia del usuario.'
   const stackDescription: string = 'En mi stack principal tengo Typescript, React, AntDesign, Java y Spring aún así me gusta investigar y he desarrollado proyectos personales con Vue, Angular y Python.';
 
   return (
